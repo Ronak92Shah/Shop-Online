@@ -1,0 +1,44 @@
+<!-- Assignment 1 -->
+<!--Student ID - 4949773 -->
+<!--Name - Ronak Shah -->
+<!--Page - bidding.htm -->
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+		<meta charset = "utf-8"/>
+		<meta name = "description"		content = "Login Page of ShopOnline"/>
+		<meta name = "keywords"		content = "ShopOnline, on-line shopping"/>
+		<meta name = "author"	content = "Ronak Shah"/>
+		<title> ShopOnline </title>
+		<!-- All for javascript files address -->
+		<script src = "xhr.js"></script>
+		<script src = "bidding.js"></script>
+		<script src = "logout.js"></script>
+		<!-- CSS file address -->
+		<link type="text/css" href="style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<header>
+			<h1>ShopOnline</h1>
+		</header>
+
+		<!--Navigation links-->
+		<nav>
+			<a href = "login.html">Home</a>
+			<a href = "listing.html">Listing</a>
+			<a href = "bidding.html">Bidding</a>
+			<a href = "maintenance.html">Maintenance</a>
+			<a href = "javascript:logout()">Log Out</a>
+		</nav>
+
+		<p class = "data">Current auction items are listed below.To place a bid for an item, use the PLace Bid button.</p>
+		<p class = "data"><strong>NOTE:</strong> Item remaining time and bid price are updated every 1 seconds.</p>
+				<!-- To show return message from javascript -->
+		<div id = "display"></div>
+		
+	</body>
+			
+</html>

@@ -1,0 +1,57 @@
+<!-- Assignment 1 -->
+<!--Student ID - 4949773 -->
+<!--Name - Ronak Shah -->
+<!--Page - maintenance.htm -->
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+
+		<meta charset = "utf-8"/>
+		<meta name = "description"		content = "Login Page of ShopOnline"/>
+		<meta name = "keywords"		content = "ShopOnline, on-line shopping"/>
+		<meta name = "author"	content = "Ronak Shah"/>
+		<title> ShopOnline </title>
+		<script type = "text/javascript" src = "xhr.js"></script>
+		<script type = "text/javascript" src = "maintenance.js"></script>
+		<script src = "logout.js"></script>
+		<link type="text/css" href="style.css" rel="stylesheet" />
+
+	</head>
+
+	<body>
+
+		<header>
+			<h1>ShopOnline</h1>
+		</header>
+
+		<!--Navigation links-->
+		<nav>
+			<a href = "login.html">Home</a>
+			<a href = "listing.html">Listing</a>
+			<a href = "bidding.html">Bidding</a>
+			<a href = "maintenance.html">Maintenance</a>
+			<a href = "javascript:logout()">Log Out</a>
+		</nav>
+		
+		<form>
+			<fieldset>
+			<input type="button" value="Process Auction Items" id = "pro" onclick = "process()" />
+			<div id = "display1"></div>
+			</fieldset>
+		
+			<fieldset>
+			<input type="button" value="Generate Report" id = "submit" onclick = "generateReport()"/>
+			<div id = "display2"></div>
+			</fieldset>
+			
+		</form>
+		
+	</body>
+
+	<!-- In the footer organizations copy-right rights is being mentioned and designers name-->
+	<footer>
+		<p>&#169;<a href = "login.html">ShopOnline </a>Dated 2015</p>
+		<a href="mailto:4949773@student.swin.edu.au" id="studentmail">Designed by: Ronak Shah</a>
+	</footer>
+</html>

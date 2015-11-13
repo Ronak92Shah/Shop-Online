@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Customer>
+  <Person>
+    <CustomerId>180560482</CustomerId>
+    <FirstName>Ronak</FirstName>
+    <Surname>Shah</Surname>
+    <EmailId>ronak92shah@gmail.com</EmailId>
+    <Password>310083990</Password>
+  </Person>
+  <Person>
+    <CustomerId>1432566767</CustomerId>
+    <FirstName>jinit</FirstName>
+    <Surname>mehta</Surname>
+    <EmailId>jinit@mehta.com</EmailId>
+    <Password>839012126</Password>
+  </Person>
+</Customer>

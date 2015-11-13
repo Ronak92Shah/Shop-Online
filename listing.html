@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- Assignment 2 -->
+<!--Student ID - 4949773 -->
+<!--Name - Ronak Shah -->
+<!--Page - listing.htm -->
+
+<html lang = "en">
+
+	<head>
+		<meta charset = "utf-8"/>
+		<meta name = "description"		content = "Listing Page of ShopOnline"/>
+		<meta name = "keywords"		content = "ShopOnline, on-line shopping"/>
+		<meta name = "author"	content = "Ronak Shah"/>
+		<title> ShopOnline </title>
+		<!-- All for javascript files address -->
+		<script src = "xhr.js"></script>
+		<script src = "listing.js"></script>
+		<script src = "category.js"></script>
+		<script src = "logout.js"></script>
+		<!-- CSS file address -->
+		<link type="text/css" href="style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!-- Header of the Page -->
+		<header>
+			<h1>ShopOnline</h1>
+		</header>
+
+		<!--Navigation links-->
+		<nav>
+			<a href = "login.html">Home</a>
+			<a href = "listing.html">Listing</a>
+			<a href = "bidding.html">Bidding</a>
+			<a href = "maintenance.html">Maintenance</a>
+			<a href = "javascript:logout()">Log Out</a>
+		</nav>
+
+		<p class = "data">To create a listing enter listing details below.</p>
+		<!-- Form to List -->
+	<form>
+			<fieldset>
+				<legend>Seller Details</legend>
+				<p>* Required Fields</p>
+		
+			<p>
+				<label for = "item_name">Item Name*
+				<input type = "text" name = "item_name" id = "name" required = "required"></label>
+			</p>
+			
+			<p>
+				<label for = "category">Category*</label>
+				<select name = "category" id = "category" onchange = "addCategory(this)" required = "required" >
+				<option value = "choose" id = "choose"  >choose</option>
+				<option value = "other" id = "other"  >other</option>
+				</select>
+			</p>
+			
+			<p>
+				<label for = "describe">Description*
+				<input type = "text" name = "describe" id = "describe" required = "required" </label>
+			</p>
+			
+			<p>
+				<label for = "start_price">Start Price*
+				<input type = "text" name = "start_price" id = "start_price" value = "0" size = "5" required = "required"></label>
+				<label for = "decimal_price">
+				<input type = "text" name = "decimal_price" id = "decimal_price" value = "00" size = "2" required = "required"></label>
+			</p>
+			
+			<p>
+				<label for = "reserve_price">Reserve Price*
+				<input type = "text" name = "reserve_price" id = "reserve_price" size = "5" required = "required"></label>
+				<label for = "decimal_reserve">
+				<input type = "text" name = "decimal_reserve" id = "decimal_reserve" value = "00" size = "2" required = "required"></label>
+			</p>
+			
+			<p>
+				<label for = "buy_price">Buy It Now Price*
+				<input type = "text" name = "buy_price" id = "buy_price" size = "5" required = "required"></label>
+				<label for = "decimal_buy">
+				<input type = "text" name = "decimal_buy" id = "decimal_buy" value = "00" size = "2" required = "required"></label>
+			</p>
+			
+			<p>
+				<label for = "day">Duration*</label>
+				<select name = "day" id = "days" onclick = addDay(this)>
+				<option value = "day"  id = "day">Day</option>
+				</select>
+				<label for = "hour"></label>
+				<select name = "hour" id = "hours" onclick = addHour(this)>
+				<option value = "hour"  id = "hour">Hour</option>
+				</select>
+				<label for = "min"></label>
+				<select name = "min" id = "mins" onclick = addMin(this)>
+				<option value = "min"  id = "min">Min</option>
+				</select>
+			</p>
+			
+			<p>
+					<!-- Button with on-click event, it will take flow of program to listing.js -->
+				<input type="button" value="Listing" id = "submit" onclick = listingValidate() />
+				<input type="reset" value="Reset"  />
+			</p>
+					<!-- To show return message from javascript -->
+				<div id = "listingMsg"> </div>		
+			</fieldset>
+		</form>
+	</body>
+
+		<!-- In the footer organizations copy-right rights is being mentioned and designers name-->
+	<footer>
+		<p>&#169;<a href = "login.html">ShopOnline </a>Dated 2015</p>
+		<a href="mailto:4949773@student.swin.edu.au" id="studentmail">Designed by: Ronak Shah</a>
+	</footer>
+
+</html>

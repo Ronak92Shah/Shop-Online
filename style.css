@@ -1,0 +1,60 @@
+/*style.css
+author: Ronak Shah
+created: 12/05/2015
+last modified: 20/05/2015
+description: A style sheet for Assignment -2
+*/
+
+/*Header position*/
+
+header{
+text-align: center;
+color:blue;
+}
+
+nav{
+min-height: 20px;
+background-color:#dddddd;
+text-align: center;
+padding: 5px 10px;
+position: relative;
+width: 100%;
+top: 0px;
+}
+/*adjust colour and font-weight of all the links*/
+a{
+padding-Right: 60px;
+color:blue;
+font-weight: bold;
+}
+
+/*to remove underline from navigation links*/
+a:link{
+text-decoration:none;
+}
+
+/*To Add effects to the navigation link*/
+a:hover{background-color: white;
+}
+
+fieldset{
+margin-left:200px;
+width:700px;
+margin-right:200px;
+background-color: #dddddd;
+}
+
+.data{
+text-align: center;
+}
+
+
+footer{
+    position:fixed;
+    height:50px;
+    background-color:#dddddd;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+}
